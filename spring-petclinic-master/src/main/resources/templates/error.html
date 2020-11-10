@@ -1,0 +1,9 @@
+{% extends "fragments/layout" %}
+
+{% set menu = 'error' %}
+
+{% block body %}
+    <img src="{{ href('/resources/images/pets.png') }}"/>
+    <h2>Something happened...</h2>
+    <p>{{ message }}</p>
+{% endblock %}

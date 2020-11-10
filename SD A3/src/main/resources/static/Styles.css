@@ -1,0 +1,36 @@
+.header {
+  text-align: center;
+  font-size: 10px;
+   text-decoration: underline;
+}
+.after_underline{
+content: "";
+width:200px;
+height:2px;
+background:#000;
+content-align: center;
+}
+.div_center{
+ margin: auto;
+  width: 50%;
+  border: 3px white;
+  padding: 10px;
+}
+.text_indent{
+text-indent:1em;
+}
+table,th,td{
+ border: 1px solid black;
+  border-collapse: collapse;
+  text-align:left;
+ }
+.text_underline{
+  text-align: center;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.underline{
+text-decoration: underline;
+text-align:right;
+}
+

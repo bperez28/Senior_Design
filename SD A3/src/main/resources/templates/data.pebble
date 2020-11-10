@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Private Settlement Form</h1>
+</div>
+
+<div class="div_center" >
+    <p>1. Details of Accident <br/></p>
+    <p class="text_indent">Date/Time:<u>{{ date }} - {{ Time }}</u></p>
+    <p class="text_indent">Location: {{ locationI }}</p>
+    <p>2a.Motor-vehicle registration no.{{ vehicleRegistrationNumberA }} driven by {{ vehicleOwnerFullNameA }}</p>
+    <p>2b.Motor-vehicle registration no.{{ vehicleRegistrationNumberB }} driven by {{ vehicleOwnerFullNameB }}</p>
+    <p>    3. There were no personal injuries or death involved.</p>
+    <p>    4. The parties have agreed to settle this matter amicably as follows:</p>
+    <br/>
+    <p class ="text_indent">*a. Neither party shall be liable to compensate the other party for any loss or </p>
+    <p class = "text_indent">damages (direct or indirect)incurred or to be incurred asa result of the</p>
+    <p class = "text_indent">accident.</p>
+
+
+    <p class="text_underline"> Risk Assessment </p>
+    <table class = "table" style ="width:80%">
+        <tr>
+            <th style = "width:35% height:35px"> Hazard</th>
+            <th style = "width:33%">Person at Risk</th>
+            <th style = "width:26%">Controls to minimize risk</th>
+        </tr>
+        <tr>
+            <td style="height:42px">{{ RiskAssessmentOneHazard }} </td>
+            <td>{{ RiskAssessmentOnePersonsAtRisk }} </td>
+            <td>{{ riskAssessmentOneControlToMinimizeRisk }} </td>
+        </tr>
+        <tr>
+            <td style="height:25px">{{ RiskAssessmentTwoHazard }} </td>
+            <td>{{ RiskAssessmentTwoPersonsAtRisk }} </td>
+            <td>{{ riskAssessmentTwoControlToMinimizeRisk }} </td>
+        </tr>
+    </table>
+
+    <p class="text_underline"> Fire Assessment </p>
+    <table class = "table" style ="width:80%">
+        <tr>
+            <th style = "width:35% height:35px"> Hazard</th>
+            <th style = "width:33%">Person at Risk</th>
+            <th style = "width:26%">Controls to minimize risk</th>
+        </tr>
+        <tr>
+            <td style="height:42px">{{ RiskAssessmentThreeHazard }} </td>
+            <td>{{ RiskAssessmentThreePersonsAtRisk }} </td>
+            <td>{{ riskAssessmentThreeControlToMinimizeRisk }} </td>
+        </tr>
+        <tr>
+            <td style="height:25px">{{ RiskAssessmentFourHazard }} </td>
+            <td>{{ RiskAssessmentFourPersonsAtRisk }} </td>
+            <td>{{ riskAssessmentFourControlToMinimizeRisk }} </td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="/data" method="Post">
+		<div class="container ">
+			<div class="row justify-content-center">
+				<div class="col-sm">
+					<h1 >{{title}}</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					{{datentime}}
+				</div>
+				<div class="col-sm">
+					{{location}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<input type="text" name="date">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="locationI">
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-sm">
+					<h4>{{partya}}</h4>
+				</div>
+				<div class="col-sm">
+					<h4>{{partyb}}</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					{{vehicleowner}}
+				</div>
+				<div class="col-sm">
+					{{vehicleowner}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<input type="text" name="vehicleOwnerFullNameA">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="vehicleOwnerFullNameB">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					{{vehiclenumber}}
+				</div>
+				<div class="col-sm">
+					{{vehiclenumber}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<input type="text" name="vehicleRegistrationNumberA">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="vehicleRegistrationNumberB">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<h4>{{riskassessment}}</h4>
+				</div>
+				<div class="col-sm">
+					<h4>{{fireassessment}}</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<p>{{assessment1}}</p>
+				</div>
+				<div class="col-sm">
+					<p>{{assessment2}}</p>
+				</div>
+				<div class="col-sm">
+					<p>{{assessment1}}</p>
+				</div>
+				<div class="col-sm">
+					<p>{{assessment2}}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					{{hazard}}
+				</div>
+				<div class="col-sm">
+					{{hazard}}
+				</div>
+				<div class="col-sm">
+					{{hazard}}
+				</div>
+				<div class="col-sm">
+					{{hazard}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<input type="text" name="RiskAssessmentOneHazard">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="RiskAssessmentTwoHazard">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="RiskAssessmentThreeHazard">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="RiskAssessmentFourHazard">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					{{personsrisk}}
+				</div>
+				<div class="col-sm">
+					{{personsrisk}}
+				</div>
+				<div class="col-sm">
+					{{personsrisk}}
+				</div>
+				<div class="col-sm">
+					{{personsrisk}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<input type="text" name="RiskAssessmentOnePersonsAtRisk">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="RiskAssessmentTwoPersonsAtRisk">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="RiskAssessmentThreePersonsAtRisk">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="RiskAssessmentFourPersonsAtRisk">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					{{controlrisk}}
+				</div>
+				<div class="col-sm">
+					{{controlrisk}}
+				</div>
+				<div class="col-sm">
+					{{controlrisk}}
+				</div>
+				<div class="col-sm">
+					{{controlrisk}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<input type="text" name="riskAssessmentOneControlToMinimizeRisk">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="riskAssessmentTwoControlToMinimizeRisk">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="riskAssessmentThreeControlToMinimizeRiskfire">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="riskAssessmentFourControlToMinimizeRisk">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<button>Clear</button>
+				</div>
+				<div class="col-sm">
+					<button>Submit</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

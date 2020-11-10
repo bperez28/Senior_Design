@@ -1,0 +1,22 @@
+{% extends "fragments/layout" %}
+
+{% import "fragments/inputField" %}
+{% set menu = 'owners' %}
+
+{% block body %}
+  <h2>Owner</h2>
+  <form class="form-horizontal" id="add-owner-form" method="post">
+    <div class="form-group has-feedback">
+      {{ inputField("owner", "First Name", "firstName", "text", owner.firstName, _context) }}
+      {{ inputField("owner", "Last Name", "lastName", "text", owner.lastName, _context) }}
+      {{ inputField("owner", "Address", "address", "text", owner.address, _context) }}
+      {{ inputField("owner", "City", "city", "text", owner.city, _context) }}
+      {{ inputField("owner", "Telephone", "telephone", "text", owner.telephone, _context) }}
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button class="btn btn-default" type="submit">{{ owner['new'] ? 'Add Owner' : 'Update Owner' }}</button>
+      </div>
+    </div>
+  </form>
+{% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Settlement Form</h1>
+</div>
+
+<div class="div_center" >
+    <p>1. Details  <br/></p>
+    <p class="text_indent" "underline">{{datentime}}<u>{{ Time }}</u></p>
+    <p class="text_indent">{{location}} {{ locationI }}</p>
+    <p>    2. There were no personal injuries or death involved.</p>
+    <p>    3. The parties have agreed to settle this matter amicably as follows:</p>
+    <br/>
+    <p class ="text_indent">*a. Neither party shall be liable to compensate the other party for any loss or </p>
+    <p class = "text_indent">damages (direct or indirect)incurred or to be incurred asa result of the</p>
+    <p class = "text_indent">accident.</p>
+
+
+    <p class="text_underline">Assessment </p>
+    <table class = "table" style ="width:80%">
+        <tr>
+            <th style = "width:35% height:35px"> Hazard</th>
+            <th style = "width:33%">Person at Risk</th>
+            <th style = "width:26%">Controls to minimize risk</th>
+        </tr>
+        <tr>
+            <td style="height:42px">{{ info }} </td>
+            <td>{{ info2 }} </td>
+            <td>{{ info3 }} </td>
+        </tr>
+        <tr>
+            <td style="height:25px">{{ info4 }} </td>
+            <td>{{ info5 }} </td>
+            <td>{{ info6 }} </td>
+        </tr>
+    </table>
+
+   
+
+</div>
+</body>
+</html>

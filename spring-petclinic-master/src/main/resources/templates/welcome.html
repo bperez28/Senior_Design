@@ -1,0 +1,12 @@
+{% extends "fragments/layout" %}
+
+{% set menu = 'home' %}
+
+{% block body %}
+  <h2>{{ message('welcome') }}</h2>
+  <div class="row">
+      <div class="col-md-12">
+        <img class="img-responsive" src="{{ href('/resources/images/pets.png') }}"/>
+      </div>
+  </div>
+{% endblock %}
